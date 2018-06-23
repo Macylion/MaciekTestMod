@@ -11,7 +11,7 @@ namespace MaciekTestMod.Items{
 		}
 
 		public override void SetDefaults(){
-			item.damage = 22;
+			item.damage = 23;
 			item.melee = true;
 			item.width = 40;
 			item.height = 40;
