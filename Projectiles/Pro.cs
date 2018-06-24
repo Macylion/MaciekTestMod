@@ -25,6 +25,8 @@ namespace MaciekTestMod.Projectiles
 			{
 				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("Sparkle"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
 			}
+			projectile.netUpdate = true;
+
 		}
 
 		public override bool OnTileCollide(Vector2 oldVelocity)

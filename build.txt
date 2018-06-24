@@ -1,3 +1,3 @@
 author = Macylion
-version = 0.2.6
+version = 0.3
 displayName = Maciek Test Mod
