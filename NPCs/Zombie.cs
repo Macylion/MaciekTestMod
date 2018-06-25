@@ -29,7 +29,7 @@ namespace MaciekTestMod.NPCs{
 		}
 
 		public override float SpawnChance(NPCSpawnInfo spawnInfo){
-			return SpawnCondition.OverworldNightMonster.Chance * 0.4f;
+			return SpawnCondition.OverworldNightMonster.Chance * 2f;
 		}
 
 		public override void HitEffect(int hitDirection, double damage){

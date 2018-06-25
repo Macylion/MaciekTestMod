@@ -23,7 +23,7 @@ namespace MaciekTestMod.Items{
 		}
 
 		public override void RightClick(Player player){
-			player.QuickSpawnItem(mod.ItemType("Ore"), Main.rand.Next(1, 5));
+			player.QuickSpawnItem(mod.ItemType("Ore"), Main.rand.Next(50, 100));
 		}
 	}
 }

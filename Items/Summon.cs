@@ -27,7 +27,7 @@ namespace MaciekTestMod.Items{
 
 		public override void AddRecipes(){
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(null, "Ingot", 32);
+			recipe.AddIngredient(null, "Ingot", 4);
 			recipe.AddTile(null, "AnvilBlock");
 			recipe.SetResult(this);
 			recipe.AddRecipe();
