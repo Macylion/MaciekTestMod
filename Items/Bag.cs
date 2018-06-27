@@ -23,7 +23,14 @@ namespace MaciekTestMod.Items{
 		}
 
 		public override void RightClick(Player player){
-			player.QuickSpawnItem(mod.ItemType("Ore"), Main.rand.Next(50, 100));
+			player.QuickSpawnItem(mod.ItemType("Ore"), Main.rand.Next(5, 10));
+		}
+
+		public override void AddRecipes(){
+			ModRecipe recipe = new ModRecipe(mod);
+			recipe.AddIngredient(ItemID.Silk, 10);
+			recipe.SetResult(ItemID.GuideVoodooDoll, 1);
+			recipe.AddRecipe();
 		}
 	}
 }
