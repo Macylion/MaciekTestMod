@@ -11,7 +11,7 @@ namespace MaciekTestMod.Items{
 
 
 		public override void SetDefaults(){
-			item.damage = 34;
+			item.damage = 24;
 			item.ranged = true;
 			item.melee = false;
 			item.noMelee = true;

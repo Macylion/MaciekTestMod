@@ -18,7 +18,7 @@ namespace MaciekTestMod.Items{
 			item.rare = 2;
 			item.maxStack = 30;
 			item.consumable = true;
-			item.value = 10000;
+			item.value = 10;
             item.rare = 1;
             item.useAnimation = 30;
             item.useTime = 30;

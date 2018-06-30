@@ -137,6 +137,8 @@ namespace MaciekTestMod.NPCs {
 			nextSlot++;
 			shop.item[nextSlot].SetDefaults(mod.ItemType("Summon"));
 			nextSlot++;
+			shop.item[nextSlot].SetDefaults(mod.ItemType("Shield"));
+			nextSlot++;
 		}
 
 		public override void NPCLoot(){
