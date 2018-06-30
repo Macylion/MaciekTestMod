@@ -8,7 +8,7 @@ using Terraria.ModLoader;
 
 
 namespace MaciekTestMod.NPCs{
-
+    [AutoloadHead]
 	public class BigZombie : ModNPC{
 
 		public override void SetStaticDefaults(){
@@ -37,9 +37,9 @@ namespace MaciekTestMod.NPCs{
             npc.buffImmune[67] = true;
         }
         public override void AI(){
-            if(npc.life < 5000 && npc.aiStyle == 56){
+            /*if(npc.life < 5000 && npc.aiStyle == 56){
                 npc.aiStyle = 5;
-            }
+            }*/
         }
         public override void BossLoot(ref string name, ref int potionType){
             potionType = ItemID.LesserHealingPotion;

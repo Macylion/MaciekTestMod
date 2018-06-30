@@ -4,33 +4,34 @@ using Terraria.ModLoader;
 
 namespace MaciekTestMod.Items{
 
-	public class Summon : ModItem{
+	public class Potion : ModItem{
 
 		public override void SetStaticDefaults(){
-			DisplayName.SetDefault("???");
-			Tooltip.SetDefault("??? ???");
+			DisplayName.SetDefault("Maciek Poison");
+			Tooltip.SetDefault("It smells like poison");
 		}
 
 		public override void SetDefaults(){
-			item.CloneDefaults(ItemID.LifeFruit);
+			//item.CloneDefaults(ItemID.LesserHealingPotion);
 			item.width = 20;
 			item.height = 20;
 			item.rare = 2;
 			item.maxStack = 30;
 			item.consumable = true;
 			item.value = 10000;
-            item.rare = 1;
+            item.rare = 5;
+			item.UseSound = SoundID.Item8;
             item.useAnimation = 30;
             item.useTime = 30;
             item.useStyle = 4;
 		}
 
 		public override void AddRecipes(){
-			ModRecipe recipe = new ModRecipe(mod);
+			/*ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(null, "Ingot", 4);
 			recipe.AddTile(null, "AnvilBlock");
 			recipe.SetResult(this);
-			recipe.AddRecipe();
+			recipe.AddRecipe();*/
 		}
 
 		public override bool CanUseItem(Player player){
@@ -38,8 +39,7 @@ namespace MaciekTestMod.Items{
 		}
 
 		public override bool UseItem(Player player){
-			NPC.SpawnOnPlayer(player.whoAmI, mod.NPCType("BigZombie"));
-			Main.PlaySound(15, (int)player.position.X, (int)player.position.Y, 0);
+			player.AddBuff(mod.BuffType("Buff"), 8000, true);
 			return true;
 		}
 

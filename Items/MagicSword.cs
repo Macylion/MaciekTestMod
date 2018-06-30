@@ -20,7 +20,7 @@ namespace MaciekTestMod.Items{
 			item.reuseDelay = 1;
 			item.useStyle = 1;
 			item.knockBack = 2;
-			item.value = 600;
+			item.value = 1000000;
 			item.rare = 1;
 			item.UseSound = SoundID.Item8;
 			item.autoReuse = true;

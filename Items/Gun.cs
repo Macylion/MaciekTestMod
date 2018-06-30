@@ -21,7 +21,7 @@ namespace MaciekTestMod.Items{
 			item.useAnimation = 10;
 			item.useStyle = 5;
 			item.knockBack = 0;
-			item.value = 1000;
+			item.value = 1000000;
 			item.rare = 2;
 			item.UseSound = SoundID.Item11;
 			item.autoReuse = true;

@@ -14,7 +14,7 @@ namespace MaciekTestMod.Items{
 			item.width = 20;
 			item.height = 20;
 			item.maxStack = 999;
-			item.value = 100;
+			item.value = 10000;
 			item.rare = 1;
 			item.useTurn = true;
 			item.autoReuse = true;
