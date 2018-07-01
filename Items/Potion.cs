@@ -8,11 +8,14 @@ namespace MaciekTestMod.Items{
 
 		public override void SetStaticDefaults(){
 			DisplayName.SetDefault("Maciek Poison");
-			Tooltip.SetDefault("It smells like poison");
+			Tooltip.SetDefault("It smells like poison"
+				+ "\nbut"
+				+ "\n100% increased damage"
+				+ "\n+100 Life and Mana"
+				+ "\nIncreased Life and Mana Regen");
 		}
 
 		public override void SetDefaults(){
-			//item.CloneDefaults(ItemID.LesserHealingPotion);
 			item.width = 20;
 			item.height = 20;
 			item.rare = 2;
@@ -27,11 +30,11 @@ namespace MaciekTestMod.Items{
 		}
 
 		public override void AddRecipes(){
-			/*ModRecipe recipe = new ModRecipe(mod);
+			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(null, "Ingot", 4);
 			recipe.AddTile(null, "AnvilBlock");
 			recipe.SetResult(this);
-			recipe.AddRecipe();*/
+			recipe.AddRecipe();
 		}
 
 		public override bool CanUseItem(Player player){
@@ -39,7 +42,7 @@ namespace MaciekTestMod.Items{
 		}
 
 		public override bool UseItem(Player player){
-			player.AddBuff(mod.BuffType("Buff"), 8000, true);
+			player.AddBuff(mod.BuffType("Buff"), 12000, true);
 			return true;
 		}
 

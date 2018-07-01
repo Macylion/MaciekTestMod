@@ -8,8 +8,7 @@ using Terraria.Utilities;
 namespace MaciekTestMod.NPCs {
 
 	[AutoloadHead]
-	public class MaciekNPC : ModNPC
-	{
+	public class MaciekNPC : ModNPC{
 		public override string Texture{
 			get{
 				return "MaciekTestMod/NPCs/MaciekNPC";
@@ -69,8 +68,7 @@ namespace MaciekTestMod.NPCs {
 			return true;
 		}
 
-		public override bool CheckConditions(int left, int right, int top, int bottom)
-		{
+		public override bool CheckConditions(int left, int right, int top, int bottom){
 			int score = 0;
 			for (int x = left; x <= right; x++){
 				for (int y = top; y <= bottom; y++){
@@ -86,16 +84,16 @@ namespace MaciekTestMod.NPCs {
 			return score >= (right - left) * (bottom - top) / 2;
 		}
 
-		public override string TownNPCName()
-		{
-			switch (WorldGen.genRand.Next(4)){
+		public override string TownNPCName(){
+			/*switch (WorldGen.genRand.Next(4)){
 				case 0:
 					return "Maciuś";
 				case 1:
-					return "Maciej";
+					return "zanowny Pan Maciej";
 				default:
-					return "Maciek";
-			}
+					return "Poprostu Maciek";
+			}*/
+			return "Maciek";
 		}
 
 		public override void FindFrame(int frameHeight){
@@ -138,6 +136,26 @@ namespace MaciekTestMod.NPCs {
 			shop.item[nextSlot].SetDefaults(mod.ItemType("Summon"));
 			nextSlot++;
 			shop.item[nextSlot].SetDefaults(mod.ItemType("Shield"));
+			nextSlot++;
+			shop.item[nextSlot].SetDefaults(mod.ItemType("MaciekBreastplate"));
+			nextSlot++;
+			shop.item[nextSlot].SetDefaults(mod.ItemType("MaciekHelmet"));
+			nextSlot++;
+			shop.item[nextSlot].SetDefaults(mod.ItemType("MaciekLeggings"));
+			nextSlot++;
+			shop.item[nextSlot].SetDefaults(mod.ItemType("MaciekHamaxe"));
+			nextSlot++;
+			shop.item[nextSlot].SetDefaults(mod.ItemType("MaciekPickaxe"));
+			nextSlot++;
+			shop.item[nextSlot].SetDefaults(mod.ItemType("OreWall"));
+			nextSlot++;
+			shop.item[nextSlot].SetDefaults(mod.ItemType("MaciekWorkbench"));
+			nextSlot++;
+			shop.item[nextSlot].SetDefaults(mod.ItemType("OreTorch"));
+			nextSlot++;
+			shop.item[nextSlot].SetDefaults(mod.ItemType("OreChair"));
+			nextSlot++;
+			shop.item[nextSlot].SetDefaults(mod.ItemType("OreDoor"));
 			nextSlot++;
 		}
 

@@ -16,7 +16,7 @@ namespace MaciekTestMod.Items{
 			item.height = 20;
 			item.rare = 2;
 			item.maxStack = 30;
-			item.value = 10000;
+			item.value = Item.buyPrice(0, 10, 0, 0);;
 		}
 
 		public override bool CanRightClick(){
