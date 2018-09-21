@@ -1,2 +1,2 @@
 # MaciekTestMod
-btw is my first mod :)
+my first mod :)
